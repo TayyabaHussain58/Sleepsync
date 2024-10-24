@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Color4"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/sleepQualityRatingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Sleep Quality Rating (1-10)" />
+
+    <EditText
+        android:id="@+id/sugarIntakeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Sugar Intake (g/day)" />
+
+    <EditText
+        android:id="@+id/bedTimeEditText"
+        android:layout_width="match_parent"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Bed Time (HH:mm)" />
+
+    <EditText
+        android:id="@+id/wakeTimeEditText"
+        android:layout_width="match_parent"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Wake Time (HH:mm)" />
+
+    <EditText
+        android:id="@+id/mealTimingEditText"
+        android:layout_width="match_parent"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Meal Timing (e.g., Breakfast, Lunch, Dinner)" />
+
+    <!-- Radio Group for Meal Type (High Protein, High Carb, Balanced) -->
+    <RadioGroup
+        android:id="@+id/mealTypeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Meal Type:"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioHighProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:text="High Protein" />
+
+        <RadioButton
+            android:id="@+id/radioHighCarb"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Carb" />
+
+
+        <RadioButton
+            android:id="@+id/radioBalanced"
+            android:layout_width="wrap_content"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Balanced" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/proteinIntakeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Protein Intake (g)" />
+
+    <EditText
+        android:id="@+id/fiberIntakeEditText"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fiber Intake (g)" />
+
+    <!-- Radio Group for Quantity (Small, Medium, Large) -->
+    <RadioGroup
+        android:id="@+id/quantityRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Quantity:"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioSmall"
+            android:layout_width="wrap_content"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Small" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radioLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="382dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:text="Cancel" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="90dp"
+        android:background="@color/gray"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- Add your ImageButton (Menu icon) inside the Toolbar -->
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="15dp"
+            android:contentDescription="Menu Button"
+            android:src="@drawable/menu"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Additional content here -->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

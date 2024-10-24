@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/personimg"
+            android:id="@+id/Profile"
+            android:title="Profile">
+
+        </item>
+
+        <item
+            android:icon="@drawable/education_24"
+            android:id="@+id/Education"
+            android:title="Education">
+        </item>
+        <item
+            android:icon="@drawable/baseline_self_improvement_24"
+            android:id="@+id/Breathing"
+             android:title="BreathingExercise">
+
+        </item>
+
+        <item
+            android:icon="@drawable/analysis"
+             android:id="@+id/Recommendation"
+            android:title="Recommendation">
+
+        </item>
+
+        <item
+            android:icon="@drawable/baseline_logout_24"
+            android:id="@+id/logout"
+            android:title="Logout">
+        </item>
+    </group>
+</menu>
